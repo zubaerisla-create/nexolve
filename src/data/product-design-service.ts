@@ -5,7 +5,7 @@ export const productDesignServiceData: ProductDesignServiceData = {
   heroDescription:
     "We design digital products that balance user needs, business goals, and technical feasibility. From early concept and information structure to interface systems and experience refinement, our product design process helps transform ideas into clear, scalable, and user-centered solutions.",
   heroImage:
-    "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1800&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   processTitle: "How we shape products that feel intuitive and scalable",
   processDescription:
     "Our product design workflow combines strategy, user understanding, interface clarity, and system thinking to create experiences that are easier to use, easier to build, and easier to grow.",
@@ -19,7 +19,7 @@ export const productDesignServiceData: ProductDesignServiceData = {
       description:
         "We begin by understanding the problem space, the target users, the business priorities, and the gaps in the current experience. This gives the design process a clear strategic direction.",
       image:
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "Team discussing product strategy and planning user-centered features",
       deliverables: [
         "Product goals",
@@ -35,7 +35,7 @@ export const productDesignServiceData: ProductDesignServiceData = {
       description:
         "We define the user journey, screen logic, and content hierarchy so the product feels understandable and structured before visual design begins.",
       image:
-        "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1542626991-cbc4e32524cc?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "Wireframes and product flow planning on a design workspace",
       deliverables: [
         "User flows",
@@ -51,7 +51,7 @@ export const productDesignServiceData: ProductDesignServiceData = {
       description:
         "Once the product structure is defined, we create high-fidelity screens, interaction patterns, and reusable components that make the experience visually strong and practically usable.",
       image:
-        "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1560461396-ec0ef7bb29dd?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "Product designer working on interface systems and detailed layouts",
       deliverables: [
         "UI screens",
@@ -67,7 +67,7 @@ export const productDesignServiceData: ProductDesignServiceData = {
       description:
         "We refine flows, examine real user scenarios, and validate the experience across devices and product states so the design is more reliable before handoff.",
       image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop",
+        "https://plus.unsplash.com/premium_photo-1661510884617-232a2ba30dc2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "Team validating product design decisions during a review session",
       deliverables: [
         "Usability review",
@@ -83,7 +83,7 @@ export const productDesignServiceData: ProductDesignServiceData = {
       description:
         "We organize the design for developer handoff, document reusable logic, and ensure the product system can scale with future features and updates.",
       image:
-        "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1541506618330-7c369fc759b5?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "Design handoff process between product design and engineering",
       deliverables: [
         "Developer handoff",

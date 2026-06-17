@@ -5,7 +5,7 @@ export const uiUxServiceData: UiUxServiceData = {
   heroDescription:
     "We design digital experiences that are clear, intuitive, and visually compelling. From user journeys and wireframes to polished interface systems, our UI/UX process helps transform complex ideas into products people can understand, trust, and enjoy using.",
   heroImage:
-    "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1800&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   processTitle: "How we design experiences that feel clear and effective",
   processDescription:
     "Our UI/UX process combines user thinking, visual structure, and practical execution to create interfaces that are both engaging and easy to use across devices.",
@@ -19,7 +19,7 @@ export const uiUxServiceData: UiUxServiceData = {
       description:
         "We begin by learning about the business, target users, product goals, and current friction points. This helps us identify what the experience needs to communicate and where improvements matter most.",
       image:
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1602576666092-bf6447a729fc?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "Team workshop discussing product strategy and user needs",
       deliverables: [
         "User goal mapping",
@@ -51,7 +51,7 @@ export const uiUxServiceData: UiUxServiceData = {
       description:
         "Once the structure is clear, we design the visual system, layout rhythm, typography, spacing, and interactive details that bring the experience to life.",
       image:
-        "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "UI designer working on interface layouts and visual system",
       deliverables: [
         "High-fidelity screens",
@@ -67,7 +67,7 @@ export const uiUxServiceData: UiUxServiceData = {
       description:
         "Before handoff, we review the design across screens and user states to make sure the experience is coherent, intuitive, and ready for implementation.",
       image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1600&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       alt: "Team reviewing UX design and validating interface decisions",
       deliverables: [
         "Design review",
