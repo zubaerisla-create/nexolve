@@ -5,7 +5,7 @@ export const uiUxServiceData: UiUxServiceData = {
   heroDescription:
     "We design digital experiences that are clear, intuitive, and visually compelling. From user journeys and wireframes to polished interface systems, our UI/UX process helps transform complex ideas into products people can understand, trust, and enjoy using.",
   heroImage:
-    "https://images.unsplash.com/photo-1545235617-9465d2a55698?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1613909207039-6b173b755cc1?q=80&w=1547&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   processTitle: "How we design experiences that feel clear and effective",
   processDescription:
     "Our UI/UX process combines user thinking, visual structure, and practical execution to create interfaces that are both engaging and easy to use across devices.",
