@@ -72,7 +72,7 @@ export default function LetsCreate() {
               height={1080}
               width={1920}
               src={IMAGE_URL}
-              alt="Let's Create Meaning Together"
+              alt="Let’s Build Something Great Together"
               className="w-full h-full object-cover"
               style={{ objectPosition: "center center" }}
               draggable={false}
@@ -124,22 +124,7 @@ export default function LetsCreate() {
               </span>
             </div>
 
-            <div
-              className="text-white/60 text-xs tracking-widest border border-white/15 rounded-full px-4 py-1.5"
-              style={{
-                fontFamily: "var(--font-dm-sans)",
-                backdropFilter: "blur(8px)",
-                WebkitBackdropFilter: "blur(8px)",
-                background: "rgba(255,255,255,0.05)",
-              }}
-            >
-              Local time:{" "}
-              {new Date().toLocaleTimeString("en-US", {
-                hour: "2-digit",
-                minute: "2-digit",
-                hour12: false,
-              })}
-            </div>
+         
           </div>
 
           {/* Main content */}
@@ -175,7 +160,7 @@ export default function LetsCreate() {
                       background: "rgba(255,255,255,0.07)",
                     }}
                   >
-                    Book A Call Now
+                    Book a Free Consultation
                     <span className="text-white/50 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200 text-xs">
                       ↗
                     </span>
@@ -185,7 +170,7 @@ export default function LetsCreate() {
                     className="text-white/40 text-xs tracking-[0.2em]"
                     style={{ fontFamily: "var(--font-dm-sans)" }}
                   >
-                    [ From 8:00 To 16:30 ]
+                    [ Available Worldwide]
                   </span>
                 </div>
               </div>
@@ -195,9 +180,7 @@ export default function LetsCreate() {
                 className="text-white/45 text-[13px] leading-relaxed max-w-[280px] lg:text-right"
                 style={{ fontFamily: "var(--font-dm-sans)" }}
               >
-                [ A creative studio crafting bold, user-focused digital
-                experiences. At Nexolve, we blend strategy, design, and
-                innovation to help brands stand out and grow. ]
+                [ From concept to deployment, we help businesses build, automate, and scale through modern technology solutions. ]
               </p>
             </div>
           </motion.div>

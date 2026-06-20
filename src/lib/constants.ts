@@ -1,6 +1,6 @@
 export const SITE_NAME = "Nexolve";
-export const SITE_TAGLINE = "B2B Strategy & Design";
-export const SITE_EMAIL = "hello@nexolve.studio";
+export const SITE_TAGLINE = "Available Worldwide";
+export const SITE_EMAIL = "Available Worldwide";
 export const SITE_DESCRIPTION =
   "We partner with ambitious brands to create digital experiences that drive growth, command attention, and deliver measurable results.";
 
@@ -115,9 +115,12 @@ export const SOCIAL_LINKS = [
 
 export const HERO_SERVICES = [
   { label: "Web Development", href: "/services/web" },
-  { label: "UX & Web Design", href: "/services/ui-ux" },
-  { label: "Project Design", href: "/services/project-design" },
-  { label: "App Development", href: "/services/app" },
-  { label: "AI Integration", href: "/services/ai" },
-  { label: "Cloud Services", href: "/services/cloud" },
+   { label: "Mobile Development", href: "/services/app" },
+   { label: "AI Engineering", href: "/services/ai" },
+   { label: "Cloud Infrastructure", href: "/services/cloud" },
+   { label: "UI/UX Design", href: "/services/ui-ux" },
+  { label: "Technical Consulting", href: "/services/project-design" },
+ 
+ 
+  
 ];

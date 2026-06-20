@@ -167,8 +167,9 @@ export default function AboutSection() {
       {/* ── Decorative background text ── */}
       <TitleSection
         topClassName="top-5 lg:top-0"
-        title="About us"
+        title="About Nexolve"
         scrollYProgress={scrollYProgress}
+        opacityRange={[0, 0.12]}
       />
 
       <div className="relative mx-auto max-w-7xl">
@@ -179,8 +180,8 @@ export default function AboutSection() {
           {/* Headline */}
 
           <ScrollAnimatedText
-            title="We craft digital experiences that leave a lasting impression."
-            className="text-7xl max-w-3xl"
+            title="We build intelligent software That transforms ideas into scalable digital products"
+            className="text-7xl max-w-6xl"
           />
         </div>
 
@@ -241,13 +242,13 @@ export default function AboutSection() {
             {/* Story paragraphs */}
             <div className="space-y-8">
               <RevealText
-                text="We are a multidisciplinary creative studio rooted in the belief that great design is felt before it is seen. Founded in 2012, we have spent over a decade partnering with ambitious brands to shape how the world experiences them."
+                text="Nexolve is a multidisciplinary technology company specializing in AI Engineering, SaaS Development, Cloud Infrastructure, and Product Design."
                 className="text-base md:text-2xl text-neutral-600 leading-7 font-semibold max-w-xl"
                 delay={0.1}
               />
 
               <RevealText
-                text="Our practice spans identity, digital product, motion, and strategy — woven together by a shared obsession with quality and a restless curiosity about what is possible when craft meets technology."
+                text="We partner with startups and growing businesses to build reliable digital products that deliver measurable business outcomes."
                 className="text-base md:text-2xl text-neutral-600 leading-7 font-semibold max-w-xl"
                 delay={0.2}
               />
@@ -257,16 +258,16 @@ export default function AboutSection() {
             <div className="space-y-0 flex-1 mt-10 xl:mt-20 mb-16 border-t border-neutral-200">
               {[
                 {
-                  label: "Strategy first",
-                  desc: "Every decision begins with understanding.",
+                  label: "AI-First Thinking",
+                  desc: "We design solutions that leverage automation and intelligence from day one .",
                 },
                 {
-                  label: "Craft obsessed",
-                  desc: "Details are the design, not decoration.",
+                  label: "Production-Grade Engineering",
+                  desc: "Built with scalability, security, and maintainability in mind.",
                 },
                 {
-                  label: "Built to last",
-                  desc: "We build for the next decade, not the next trend.",
+                  label: "Long-Term Partnership",
+                  desc: "Every project includes post-launch support and technical guidance.",
                 },
               ].map((item, i) => (
                 <motion.div
@@ -312,7 +313,7 @@ export default function AboutSection() {
                 size={"lg"}
                 className="h-auto gap-2.5 px-7 py-3.5 font-body text-sm font-semibold"
               >
-                Meet the team
+               Learn More About Us
                 <span className="w-8 h-8 rounded-full bg-white/10 group-hover:bg-white/20 flex items-center justify-center transition-colors duration-300">
                   <ArrowUpRight className="w-4 h-4" />
                 </span>
@@ -338,10 +339,10 @@ export default function AboutSection() {
 
         <div className="relative grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
           {[
-            { value: 38, suffix: "+", label: "Projects delivered" },
-            { value: 12, suffix: "", label: "Years of craft" },
-            { value: 94, suffix: "%", label: "Client retention" },
-            { value: 6, suffix: "", label: "Industry awards" },
+            { value: 4, suffix: "+ years", label: "Building Digital Solutions" },
+            { value: 6, suffix: "-Month ", label: "Post-Launch Support " },
+            { value: 100, suffix: "%", label: "Tailored Development" },
+            { value: 24, suffix: "/7", label: "Technical Assistance" },
           ].map((s, i) => (
             <motion.div
               key={s.label}

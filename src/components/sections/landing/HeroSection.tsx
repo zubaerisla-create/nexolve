@@ -341,9 +341,8 @@ export default function HeroSection() {
                 className="mb-8 max-w-115 font-body text-[0.95rem] leading-relaxed text-white/40"
                 style={{ fontWeight: 300 }}
               >
-                We fuse artificial intelligence with precision engineering to
-                craft scalable products, automation systems, and brand
-                experiences that outperform the competition.
+     Beyond development. We provide architecture, AI integration, cloud infrastructure, and 6 months of post-launch technical support.
+
               </motion.p>
 
               <motion.div
@@ -357,7 +356,7 @@ export default function HeroSection() {
                   className="h-auto gap-2.5 px-7 py-3.5 font-body text-sm font-semibold"
                 >
                   <Link href="/projects">
-                    Explore Our Work
+                 Build With Nexolve
                     <svg
                       className="h-3.5 w-3.5 rotate-45"
                       fill="none"
@@ -388,7 +387,7 @@ export default function HeroSection() {
                   }
                 >
                   <Link href="/about/contact" className="flex items-center gap-3">
-                    Start a Project
+                  Book Strategy Call
                     <svg
                       className="h-3.5 w-3.5 rotate-45"
                       fill="none"
@@ -406,25 +405,7 @@ export default function HeroSection() {
                 </Button>
               </motion.div>
 
-              <motion.div
-                variants={fadeUp}
-                className="flex flex-wrap items-center gap-5"
-              >
-                {[
-                  { icon: "✦", text: "ISO 27001 Certified" },
-                  { icon: "✦", text: "SOC 2 Type II" },
-                  { icon: "✦", text: "24/7 Support" },
-                ].map((item) => (
-                  <div key={item.text} className="flex items-center gap-1.5">
-                    <span className="text-[10px] text-blue-400/50">
-                      {item.icon}
-                    </span>
-                    <span className="font-body text-[11px] tracking-wide text-white/30">
-                      {item.text}
-                    </span>
-                  </div>
-                ))}
-              </motion.div>
+           
             </motion.div>
 
             <motion.div
@@ -438,18 +419,18 @@ export default function HeroSection() {
                 className="grid grid-cols-2 gap-3"
               >
                 {[
-                  { to: 38, suffix: "+", label: "Projects Shipped" },
-                  { to: 98, suffix: "%", label: "Client Satisfaction" },
-                  { to: 12, suffix: "+", label: "AI Models Deployed" },
-                  { to: 40, suffix: "ms", label: "Avg. API Response" },
+                  { title: "AI Agents", subtitle: "RAG • LLMOps • Automation" },
+                  { title: "Product Engineering", subtitle: "Web • SaaS • Mobile" },
+                  { title: "Cloud Infrastructure", subtitle: "AWS • Docker • CI/CD" },
+                  { title: "6-Month Support", subtitle: "Every Project Included" },
                 ].map((s) => (
                   <motion.div
-                    key={s.label}
+                    key={s.title}
                     whileHover={{
                       scale: 1.03,
                       borderColor: "rgba(80,140,255,0.30)",
                     }}
-                    className="flex flex-col rounded-xl p-4 transition-colors"
+                    className="flex flex-col justify-center rounded-xl p-4 transition-colors"
                     style={{
                       background: "rgba(8,18,55,0.60)",
                       border: "1px solid rgba(55,105,255,0.14)",
@@ -457,49 +438,24 @@ export default function HeroSection() {
                     }}
                   >
                     <span
-                      className="mb-0.5 font-body text-2xl"
+                      className="mb-1 font-body text-base"
                       style={{
-                        fontWeight: 900,
+                        fontWeight: 800,
                         background: "linear-gradient(135deg,#93c5fd,#60a5fa)",
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent",
                       }}
                     >
-                      <Counter to={s.to} suffix={s.suffix} />
+                      {s.title}
                     </span>
-                    <span className="font-body text-[11px] uppercase tracking-wide text-white/30">
-                      {s.label}
+                    <span className="font-body text-[11px] tracking-wide text-white/50">
+                      {s.subtitle}
                     </span>
                   </motion.div>
                 ))}
               </motion.div>
 
-              <motion.div
-                variants={slideRight}
-                className="flex flex-wrap gap-2"
-              >
-                {["GPT-4o", "Next.js", "PyTorch", "LangChain", "AWS", "Figma"].map(
-                  (tech, i) => (
-                    <motion.span
-                      key={tech}
-                      initial={{ opacity: 0, scale: 0.75 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 1.5 + i * 0.09, duration: 0.4 }}
-                      whileHover={{
-                        scale: 1.08,
-                        color: "rgba(147,197,253,0.9)",
-                      }}
-                      className="cursor-default rounded-full px-3 py-1 font-body text-[11px] tracking-wide text-blue-200/50"
-                      style={{
-                        background: "rgba(18,45,115,0.38)",
-                        border: "1px solid rgba(60,115,255,0.17)",
-                      }}
-                    >
-                      {tech}
-                    </motion.span>
-                  )
-                )}
-              </motion.div>
+        
             </motion.div>
           </div>
         </div>

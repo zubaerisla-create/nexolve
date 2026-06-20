@@ -22,69 +22,74 @@ interface Service {
 }
 
 const services: Service[] = [
-  {
+    {
     id: "01",
     number: "[01]",
-    title: "Product Design",
-    description:
-      "We design digital products by aligning user needs, business goals, and scalable experience systems from concept to handoff.",
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
-    href: "/services/product-design",
-  },
-  {
-    id: "02",
-    number: "[02]",
-    title: "UI/UX Design",
-    description:
-      "We craft intuitive and visually refined interfaces that improve clarity, usability, and user confidence across every touchpoint.",
-    image: "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg",
-    href: "/services/ui-ux",
-  },
-  {
-    id: "03",
-    number: "[03]",
-    title: "Web Development",
-    description:
-      "We build high-performing websites and web applications with responsive architecture, strong SEO foundations, and production-ready code.",
-    image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg",
-    href: "/services/web",
-  },
-  {
-    id: "04",
-    number: "[04]",
-    title: "App Development",
-    description:
-      "We develop modern mobile applications focused on usability, performance, and scalable product growth across real user journeys.",
-    image: "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg",
-    href: "/services/app",
-  },
-  {
-    id: "05",
-    number: "[05]",
-    title: "CMS Integration",
-    description:
-      "We integrate flexible content management systems that make publishing easier while keeping the frontend fast, structured, and scalable.",
-    image: "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg",
-    href: "/services/cms",
-  },
-  {
-    id: "06",
-    number: "[06]",
-    title: "AI Integration",
+    title: "AI Engineering",
     description:
       "We embed large language models, cognitive automation, and intelligent agents into your products to unlock new capabilities and operational efficiency.",
     image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg",
     href: "/services/ai",
   },
   {
-    id: "07",
-    number: "[07]",
-    title: "Cloud Services",
+    id: "02",
+    number: "[02]",
+    title: "Web Development",
+    description:
+      "We build high-performing websites and web applications with responsive architecture, strong SEO foundations, and production-ready code.",
+    image: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg",
+    href: "/services/web",
+  },
+    {
+    id: "03",
+    number: "[03]",
+    title: "Mobile Development",
+    description:
+      "We develop modern mobile applications focused on usability, performance, and scalable product growth across real user journeys.",
+    image: "https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg",
+    href: "/services/app",
+  },
+    {
+    id: "04",
+    number: "[04]",
+    title: "Cloud & DevOps",
     description:
       "We architect, migrate, and optimize secure cloud environments with CI/CD automation and real-time monitoring for modern scalable platforms.",
     image: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg",
     href: "/services/cloud",
   },
+    {
+    id: "05",
+    number: "[05]",
+    title: "UI/UX Design",
+    description:
+      "We craft intuitive and visually refined interfaces that improve clarity, usability, and user confidence across every touchpoint.",
+    image: "https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg",
+    href: "/services/ui-ux",
+  },
+  
+  {
+    id: "06",
+    number: "[06]",
+    title: "Technical Consulting",
+    description:
+      "We design digital products by aligning user needs, business goals, and scalable experience systems from concept to handoff.",
+    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
+    href: "/services/product-design",
+  },
+
+
+  {
+    id: "07",
+    number: "[07]",
+    title: "CMS Integration",
+    description:
+      "We integrate flexible content management systems that make publishing easier while keeping the frontend fast, structured, and scalable.",
+    image: "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg",
+    href: "/services/cms",
+  },
+
+
 ];
 export default function SolutionsSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -112,7 +117,7 @@ export default function SolutionsSection() {
 
       <TitleSection
         scrollYProgress={scrollYProgress}
-        title="OUR SOLUTIONS"
+        title="OUR SERVICES"
         className="text-5xl md:text-8xl lg:text-[130px] xl:text-[200px]"
         topClassName="top-10"
       />
@@ -120,7 +125,7 @@ export default function SolutionsSection() {
       {/* Main Content */}
       <div className="py-24 md:py-32 lg:py-40 max-w-7xl mx-auto">
         <ScrollAnimatedText
-          title="Tailored digital solutions for real business growth."
+          title="Technology solutions designed to automate, scale, and grow."
           className=""
         />
         <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-16 pb-20  ">

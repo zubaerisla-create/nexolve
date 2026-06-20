@@ -11,10 +11,10 @@ import { ScanSearch } from "lucide-react";
 const steps = [
   {
     number: "01",
-    title: "Discover & Diagnose",
+    title: "Discover & Define",
     icon: ScanSearch,
     description:
-      "We analyze your market, audience, data, and existing performance to uncover real growth opportunities.",
+      "We understand your business goals, technical requirements, and project scope.",
     gradient: "from-[#1a1a2e] via-[#16213e] to-[#0f3460]",
     accentColor: "#4f8ef7",
     glowColors: ["#4f8ef7", "#60a5fa", "#93c5fd"],
@@ -23,10 +23,10 @@ const steps = [
   },
   {
     number: "02",
-    title: "Strategy & Plan",
+    title: "Design & Architect",
     icon: ScanSearch,
     description:
-      "We craft data-driven strategies tailored to your goals, ensuring every decision is backed by insights.",
+      "We create the product architecture, user experience, and technical roadmap.",
     gradient: "from-[#0f3460] via-[#533483] to-[#1a1a2e]",
     accentColor: "#a78bfa",
     glowColors: ["#a78bfa", "#c084fc", "#e879f9"],
@@ -35,10 +35,10 @@ const steps = [
   },
   {
     number: "03",
-    title: "Execute & Optimize",
+    title: "Build & Deploy",
     icon: ScanSearch,
     description:
-      "We implement with precision and continuously optimize to maximize impact and ROI.",
+      "Our team develops, tests, and launches your solution using modern technologies.",
     gradient: "from-[#1a1a2e] via-[#2d1b69] to-[#7c3aed]",
     accentColor: "#f59e0b",
     glowColors: ["#f59e0b", "#fb923c", "#fcd34d"],
@@ -47,10 +47,10 @@ const steps = [
   },
   {
     number: "04",
-    title: "Scale & Sustain",
+    title: "Support & Scale",
     icon: ScanSearch,
     description:
-      "We help you scale what works and build sustainable systems for long-term growth.",
+      "We provide ongoing support, optimization, and infrastructure scaling.",
     gradient: "from-[#0f3460] via-[#1e3a5f] to-[#0ea5e9]",
     accentColor: "#06b6d4",
     glowColors: ["#06b6d4", "#22d3ee", "#67e8f9"],
@@ -166,15 +166,16 @@ export default function ProcessSection() {
         ))}
       </div>
       <TitleSection
-      title="how we work"
-      scrollYProgress={scrollYProgress}
-      className="text-6xl md:text-8xl lg:text-9xl xl:text-[12rem]"
-      topClassName="top-0"
+        title="how we work"
+        scrollYProgress={scrollYProgress}
+        className="text-6xl md:text-8xl lg:text-9xl xl:text-[12rem] text-blue-600/80"
+        opacityRange={[0, 0.15]}
+        topClassName="top-0"
       />
 
       <div>
         <ScrollAnimatedText
-          title="A structured process built for real-world impact"
+          title="From idea to deployment, we build technology that scales."
           className="max-w-5xl"
         />
       </div>
@@ -219,7 +220,7 @@ export default function ProcessSection() {
           </div>
 
           <ScrollAnimatedText
-            title="“We combine strategy, design, and technology into a clear, repeatable process - built to reduce risk and maximize results.”"
+            title="“Great products are not just built. They are engineered, optimized, and continuously improved.”"
             className="text-4xl tracking-normal font-normal max-w-xl"
           />
         </div>

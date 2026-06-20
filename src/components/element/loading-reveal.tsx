@@ -66,7 +66,7 @@ export default function LoadingReveal() {
               >
                 <Image
                   src="/fav-icon.png"
-                  alt="Nexus Logo"
+                  alt="Nexolve Logo"
                   fill
                   className="object-contain"
                   priority
@@ -76,12 +76,12 @@ export default function LoadingReveal() {
 
             <div className="flex min-h-[64px] flex-col items-center justify-start">
               <motion.span
-                className="font-display text-3xl font-bold leading-none tracking-[0.15em] text-white uppercase"
+                className="font-display text-xl md:text-3xl font-bold leading-none tracking-[0.15em] text-white uppercase text-center px-4"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
               >
-                Nexus
+                Welcome to Nexolve
               </motion.span>
 
               <motion.span
