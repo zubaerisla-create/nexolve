@@ -16,60 +16,47 @@ export const NAV_LINKS = [
     hasDropdown: true,
     dropdown: {
       columns: [
-        // {
-        //   heading: "Strategy",
-        //   items: [
-        //     { label: "Brand Strategy", href: "/services/brand-strategy" },
-        //     { label: "Market Research", href: "/services/market-research" },
-        //     { label: "Growth Consulting", href: "/services/growth" },
-        //   ],
-        // },
         {
-          heading: "Design",
+          heading: "AI Engineering",
           items: [
-            {
-              label: "UI/UX Design",
-              href: "/services/ui-ux",
-            },
-            // { label: "Motion Graphics", href: "/services/motion" },
-            { label: "Product Design", href: "/services/product-design" },
+            { label: "AI Agents", href: "/services/ai-agents" },
+            { label: "RAG Systems", href: "/services/rag-systems" },
+            { label: "AI Automation", href: "/services/ai-automation" },
+            { label: "Custom AI Solutions", href: "/services/custom-ai" },
           ],
         },
         {
-          heading: "Development",
+          heading: "Product Development",
           items: [
             { label: "Web Development", href: "/services/web" },
-            { label: "App Development", href: "/services/app" },
-            { label: "CMS Integration", href: "/services/cms" },
-            { label: "Performance Audit", href: "/services/audit" },
+            { label: "Mobile Development", href: "/services/app" },
+            { label: "SaaS Platforms", href: "/services/saas" },
+            { label: "UI/UX Design", href: "/services/ui-ux" },
           ],
         },
         {
-          heading: "AI & Cloud",
+          heading: "Long-Term Partnership",
           items: [
-            { label: "AI Integration", href: "/services/ai" },
-            { label: "Cloud Services", href: "/services/cloud" },
+            { label: "Cloud Infrastructure", href: "/services/cloud" },
+            { label: "DevOps & CI/CD", href: "/services/devops" },
+            { label: "Maintenance & Support", href: "/services/maintenance" },
+            { label: "Technical Consulting", href: "/services/consulting" },
           ],
         },
       ],
     },
   },
-  {
-    label: "Case Study",
-    href: "/case-studies",
-    hasDropdown: false,
-  },
-  {
+    {
     label: "Projects",
     href: "/projects",
     hasDropdown: false,
   },
-  {
+    {
     label: "Blogs",
     href: "/blogs",
     hasDropdown: false,
   },
-  {
+    {
     label: "About",
     href: "/about",
     hasDropdown: true,
@@ -78,23 +65,24 @@ export const NAV_LINKS = [
         {
           heading: "Company",
           items: [
-            {
-              label: "Our Story",
-              href: "/about/story",
-            },
-            { label: "The Team", href: "/about/team" },
+            { label: "About Nexolve", href: "/about/story" },
+            { label: "Meet The Team", href: "/about/team" },
+            { label: "How We Work", href: "/about/how-we-work" },
           ],
         },
         {
-          heading: "More",
+          heading: "Connect",
           items: [
+            { label: "Book Strategy Call", href: "/contact" },
+            { label: "Contact Us", href: "/contact" },
             { label: "FAQ", href: "/about/faq" },
-            { label: "Contact Us", href: "/about/contact" },
           ],
         },
       ],
     },
   },
+
+  { label: "Contact", href: "/contact" },
 ];
 
 export const MOBILE_NAV_LINKS = [
@@ -103,7 +91,7 @@ export const MOBILE_NAV_LINKS = [
   { label: "Portfolio", href: "/portfolio" },
   { label: "Case Study", href: "/case-studies" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/aboutcontact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const SOCIAL_LINKS = [
