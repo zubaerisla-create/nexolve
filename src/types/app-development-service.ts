@@ -25,4 +25,9 @@ export type AppDevelopmentServiceData = {
   techTitle: string;
   techDescription: string;
   techItems: AppDevTechItem[];
+  faqs?: {
+    id: number;
+    question: string;
+    answer: string;
+  }[];
 };

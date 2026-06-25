@@ -3,6 +3,7 @@ import AppDevFlowStack from "@/components/sections/services/app-development/AppD
 import AppDevIntroSection from "@/components/sections/services/app-development/AppDevIntroSection";
 import AppDevProcessTimeline from "@/components/sections/services/app-development/AppDevProcessTimeline";
 import AppDevTechHighlights from "@/components/sections/services/app-development/AppDevTechHighlights";
+import { appDevelopmentServiceData } from "@/data/app-development-service";
 
 export const metadata = {
   title: "App Development Service",
@@ -19,7 +20,7 @@ export default function Page() {
         <AppDevProcessTimeline />
         <AppDevFlowStack />
         <AppDevTechHighlights />
-        <FAQ />
+        <FAQ faqs={appDevelopmentServiceData.faqs} />
       </div>
     </section>
   );

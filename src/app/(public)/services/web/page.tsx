@@ -3,6 +3,7 @@ import WebDevFlowStack from "@/components/sections/services/web-development/WebD
 import WebDevIntroSection from "@/components/sections/services/web-development/WebDevIntroSection";
 import WebDevProcessTimeline from "@/components/sections/services/web-development/WebDevProcessTimeline";
 import WebDevTechHighlights from "@/components/sections/services/web-development/WebDevTechHighlights";
+import { webDevelopmentServiceData } from "@/data/web-development-service";
 
 export const metadata = {
   title: "Web Development Service",
@@ -19,7 +20,7 @@ function page() {
         <WebDevProcessTimeline />
         <WebDevFlowStack />
         <WebDevTechHighlights />
-        <FAQ />
+        <FAQ faqs={webDevelopmentServiceData.faqs} />
       </div>
     </section>
   );

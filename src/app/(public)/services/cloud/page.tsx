@@ -3,6 +3,7 @@ import CloudServicesFlowStack from "@/components/sections/services/cloud-service
 import CloudServicesIntroSection from "@/components/sections/services/cloud-services/CloudServicesIntroSection";
 import CloudServicesProcessTimeline from "@/components/sections/services/cloud-services/CloudServicesProcessTimeline";
 import CloudServicesTechHighlights from "@/components/sections/services/cloud-services/CloudServicesTechHighlights";
+import { cloudServicesServiceData } from "@/data/cloud-services-service";
 
 export const metadata = {
   title: "Cloud Services",
@@ -19,7 +20,7 @@ export default function Page() {
         <CloudServicesProcessTimeline />
         <CloudServicesFlowStack />
         <CloudServicesTechHighlights />
-        <FAQ />
+        <FAQ faqs={cloudServicesServiceData.faqs} />
       </div>
     </section>
   );

@@ -36,4 +36,9 @@ export type WebDevServiceData = {
   showcaseTitle: string;
   showcaseDescription: string;
   showcaseItems: WebDevShowcaseItem[];
+  faqs?: {
+    id: number;
+    question: string;
+    answer: string;
+  }[];
 };

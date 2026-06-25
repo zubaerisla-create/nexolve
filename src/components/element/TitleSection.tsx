@@ -32,7 +32,12 @@ export default function TitleSection({
       aria-hidden="true"
     >
       <span
-        className={`block whitespace-nowrap leading-none font-black uppercase tracking-tighter text-neutral-900 ${className}`}
+        className={`block whitespace-nowrap leading-none font-black uppercase tracking-tighter ${className}`}
+        style={{
+          background: "linear-gradient(100deg,#60a5fa 0%,#a78bfa 50%,#38bdf8 100%)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+        }}
       >
         {title}
       </span>

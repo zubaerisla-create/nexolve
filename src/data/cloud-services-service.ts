@@ -122,4 +122,11 @@ export const cloudServicesServiceData: CloudServicesServiceData = {
         "Granular resource scaling, spot instances utilization, and scheduled shutdowns of non-production workloads.",
     },
   ],
+  faqs: [
+    { id: 1, question: "Which cloud providers do you support?", answer: "AWS, Google Cloud, Azure, DigitalOcean, and other major platforms." },
+    { id: 2, question: "Can you migrate existing applications to the cloud?", answer: "Yes. We handle migration planning, execution, and optimization." },
+    { id: 3, question: "How do you ensure security?", answer: "We implement best practices for access control, encryption, monitoring, and backups." },
+    { id: 4, question: "Do you provide cost optimization?", answer: "Yes. We continuously review infrastructure to reduce unnecessary expenses." },
+    { id: 5, question: "Can infrastructure scale automatically?", answer: "Yes. Auto-scaling and load balancing are part of our cloud solutions." },
+  ],
 };

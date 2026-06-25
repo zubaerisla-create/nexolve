@@ -159,4 +159,11 @@ export const webDevelopmentServiceData: WebDevServiceData = {
       size: "lg",
     },
   ],
+  faqs: [
+    { id: 1, question: "What types of websites do you build?", answer: "Corporate websites, SaaS platforms, portals, dashboards, eCommerce systems, and custom web applications." },
+    { id: 2, question: "Will my website be mobile-friendly?", answer: "Yes. Every website is optimized for desktop, tablet, and mobile devices." },
+    { id: 3, question: "Can you redesign an existing website?", answer: "Absolutely. We can modernize design, improve performance, and add new functionality." },
+    { id: 4, question: "Do you provide SEO optimization?", answer: "Yes. We follow technical SEO best practices during development." },
+    { id: 5, question: "Do you offer maintenance after launch?", answer: "Yes. We provide updates, monitoring, and support services." },
+  ],
 };

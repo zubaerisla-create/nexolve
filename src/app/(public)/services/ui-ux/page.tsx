@@ -3,6 +3,7 @@ import UiUxFlowStack from "@/components/sections/services/ui-ux/UiUxFlowStack";
 import UiUxIntroSection from "@/components/sections/services/ui-ux/UiUxIntroSection";
 import UiUxProcessTimeline from "@/components/sections/services/ui-ux/UiUxProcessTimeline";
 import UiUxTechHighlights from "@/components/sections/services/ui-ux/UiUxTechHighlights";
+import { uiUxServiceData } from "@/data/ui-ux-service";
 
 export const metadata = {
   title: "UI/UX Design Service",
@@ -19,7 +20,7 @@ function page() {
         <UiUxProcessTimeline />
         <UiUxFlowStack />
         <UiUxTechHighlights />
-        <FAQ />
+        <FAQ faqs={uiUxServiceData.faqs} />
       </div>
     </section>
   );

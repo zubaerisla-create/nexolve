@@ -25,6 +25,11 @@ export type ServiceDetailData = {
   techTitle: string;
   techDescription: string;
   techItems: TechItem[];
+  faqs?: {
+    id: number;
+    question: string;
+    answer: string;
+  }[];
 };
 
 export const dynamicServicesData: Record<string, ServiceDetailData> = {
@@ -47,7 +52,7 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
         description:
           "We analyze your operations to find tasks suitable for agentic automation, defining the limits and rules the agent must follow.",
         image:
-          "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1600&auto=format&fit=crop",
+          "https://res.cloudinary.com/drjnf5j1k/image/upload/v1782411109/ai-agent_vb4uvs.webp",
         alt: "Discovery workshop",
         deliverables: [
           "Logic auditing",
@@ -63,7 +68,7 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
         description:
           "We define how the agent reasons (ReAct, Plan-and-Solve) and structure vector databases for long-term memory.",
         image:
-          "https://images.unsplash.com/photo-1527474305487-b87b222841cc?q=80&w=1600&auto=format&fit=crop",
+          "https://i.ibb.co.com/jv8rmygB/ai-agent-2.png",
         alt: "Agent architecture layout",
         deliverables: [
           "Memory strategy",
@@ -79,7 +84,7 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
         description:
           "We code tools and integrations, letting the agent query databases, fetch web pages, or generate files securely.",
         image:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop",
+          "https://thumbs.dreamstime.com/b/ai-agents-assistants-human-uses-laptop-tablet-to-manage-important-things-life-introduction-artificial-intelligence-375633193.jpg?w=992",
         alt: "Developer writing integration code",
         deliverables: [
           "API orchestration",
@@ -95,7 +100,7 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
         description:
           "We set up strict moderations, check cost limits, and mask sensitive user data to prevent prompt injection or infinite loops.",
         image:
-          "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1600&auto=format&fit=crop",
+          "https://i.ibb.co.com/Kz8CHMTV/ai-agent-4.png",
         alt: "Agent safety review",
         deliverables: [
           "Loop prevention",
@@ -111,7 +116,7 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
         description:
           "We setup agent tracing and implement prompt caching to increase speed and decrease API token usage.",
         image:
-          "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600&auto=format&fit=crop",
+          "https://i.ibb.co.com/ynnMskyR/ai-agent5.png",
         alt: "Agent telemetry screen",
         deliverables: [
           "Trace dashboard",
@@ -149,6 +154,13 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
         description:
           "LangSmith and Phoenix integration to visualize prompt traces, tool latency, and agent decision nodes.",
       },
+    ],
+    faqs: [
+      { id: 1, question: "How long does it take to build an AI agent?", answer: "Most AI agent projects take 4–10 weeks depending on complexity, integrations, and business requirements." },
+      { id: 2, question: "Can AI agents integrate with our existing systems?", answer: "Yes. We can connect AI agents with CRMs, ERPs, databases, APIs, and internal business tools." },
+      { id: 3, question: "How secure are AI agents?", answer: "We implement access controls, monitoring, guardrails, and testing to ensure secure operation." },
+      { id: 4, question: "Do you provide post-launch support?", answer: "Yes. Every project includes ongoing support, optimization, and maintenance." },
+      { id: 5, question: "What tasks can AI agents automate?", answer: "Customer support, internal operations, document processing, lead qualification, reporting, and workflow automation." },
     ],
   },
   "rag-systems": {
@@ -273,6 +285,13 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
           "Row-level security and ACL filters embedded into vector schemas to prevent unauthorized document access.",
       },
     ],
+    faqs: [
+      { id: 1, question: "What types of documents can a RAG system process?", answer: "PDFs, Word documents, spreadsheets, databases, websites, knowledge bases, and internal documentation." },
+      { id: 2, question: "Can RAG systems work with private company data?", answer: "Yes. We build secure systems that operate on your proprietary data while maintaining strict access controls." },
+      { id: 3, question: "How accurate are RAG-based answers?", answer: "Accuracy depends on data quality and implementation. We use evaluation frameworks and retrieval optimization to maximize reliability." },
+      { id: 4, question: "Which vector databases do you support?", answer: "Pinecone, Weaviate, Qdrant, ChromaDB, Milvus, and other enterprise vector databases." },
+      { id: 5, question: "Do you provide maintenance and updates?", answer: "Yes. We continuously monitor and improve retrieval quality and system performance." },
+    ],
   },
   "ai-automation": {
     heroTitle: "AI Automation",
@@ -395,6 +414,13 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
         description:
           "AWS Lambda and Google Cloud Run configurations to execute pipelines on-demand, reducing idle costs.",
       },
+    ],
+    faqs: [
+      { id: 1, question: "What business processes can be automated?", answer: "Data entry, reporting, email handling, lead management, document workflows, and internal operations." },
+      { id: 2, question: "Will automation replace human employees?", answer: "Automation is designed to eliminate repetitive tasks and improve efficiency, allowing teams to focus on higher-value work." },
+      { id: 3, question: "Can automation integrate with existing tools?", answer: "Yes. We support integrations with CRM, ERP, email, databases, and third-party platforms." },
+      { id: 4, question: "How quickly can automation deliver ROI?", answer: "Many businesses see measurable efficiency gains within weeks of deployment." },
+      { id: 5, question: "Can workflows be modified later?", answer: "Absolutely. Automation systems are designed to evolve with your business needs." },
     ],
   },
   "custom-ai": {
@@ -519,6 +545,13 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
           "GPTQ, AWQ, and GGUF quantization formats to fit high-capability models into lower-cost cloud GPUs.",
       },
     ],
+    faqs: [
+      { id: 1, question: "How do you determine the right AI solution?", answer: "We start with a discovery phase to understand your goals, data, workflows, and business challenges." },
+      { id: 2, question: "Can you build industry-specific AI systems?", answer: "Yes. Every solution is tailored to your industry, requirements, and operational processes." },
+      { id: 3, question: "Which AI models do you support?", answer: "OpenAI, Gemini, Claude, open-source models, and hybrid deployments." },
+      { id: 4, question: "Do you provide on-premise deployments?", answer: "Yes. Depending on security and compliance requirements." },
+      { id: 5, question: "Can AI solutions scale as our business grows?", answer: "Yes. Scalability is considered during architecture and infrastructure planning." },
+    ],
   },
   "saas": {
     heroTitle: "SaaS Platforms",
@@ -641,6 +674,13 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
         description:
           "Fast API endpoints leveraging Next.js Route Handlers, tRPC, or GraphQL for efficient client data sync.",
       },
+    ],
+    faqs: [
+      { id: 1, question: "Can you build a SaaS product from scratch?", answer: "Yes. We handle architecture, design, development, deployment, and scaling." },
+      { id: 2, question: "Do you support subscription billing?", answer: "Yes. We integrate Stripe, Paddle, and other billing platforms." },
+      { id: 3, question: "Can SaaS platforms support multiple tenants?", answer: "Yes. We design scalable multi-tenant architectures." },
+      { id: 4, question: "How do you ensure scalability?", answer: "Through cloud-native infrastructure, optimized databases, and performance-focused architecture." },
+      { id: 5, question: "Do you provide ongoing support?", answer: "Yes. Long-term maintenance and platform improvements are available." },
     ],
   },
   "devops": {
@@ -765,6 +805,13 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
           "Prometheus, Grafana, and Sentry implementation to trace runtime logs and infrastructure health.",
       },
     ],
+    faqs: [
+      { id: 1, question: "What is DevOps and why is it important?", answer: "DevOps improves deployment speed, reliability, collaboration, and operational efficiency." },
+      { id: 2, question: "Do you set up CI/CD pipelines?", answer: "Yes. We automate testing, deployment, and release workflows." },
+      { id: 3, question: "Which tools do you use?", answer: "GitHub Actions, GitLab CI/CD, Jenkins, Docker, Kubernetes, and cloud-native services." },
+      { id: 4, question: "Can you improve an existing DevOps setup?", answer: "Absolutely. We audit, optimize, and modernize existing workflows." },
+      { id: 5, question: "Do you provide monitoring solutions?", answer: "Yes. We implement logging, alerting, and observability systems." },
+    ],
   },
   "maintenance": {
     heroTitle: "Maintenance & Support",
@@ -883,10 +930,23 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
       },
       {
         id: 4,
+        name: "Code Audits",
+        description:
+          "Comprehensive code reviews to identify technical debt, security vulnerabilities, and logic flaws.",
+      },
+      {
+        id: 5,
         name: "SLA Commitments",
         description:
           "Dedicated engineer assignments ensuring rapid triage and patch execution for live bugs.",
       },
+    ],
+    faqs: [
+      { id: 1, question: "What does your support service include?", answer: "Bug fixes, monitoring, security updates, performance improvements, and technical consultation." },
+      { id: 2, question: "How long does support last?", answer: "Every project includes a support period, with extended plans available." },
+      { id: 3, question: "Do you offer emergency support?", answer: "Yes. Critical issues receive priority response." },
+      { id: 4, question: "Can you maintain software built by another company?", answer: "Yes. We can audit, stabilize, and support third-party systems." },
+      { id: 5, question: "How are support requests managed?", answer: "Through structured communication channels and issue tracking systems." },
     ],
   },
   "consulting": {
@@ -1010,6 +1070,13 @@ export const dynamicServicesData: Record<string, ServiceDetailData> = {
         description:
           "System architectural preparation for security reviews, GDPR compliance, or SOC2 readiness.",
       },
+    ],
+    faqs: [
+      { id: 1, question: "What types of consulting do you provide?", answer: "Architecture reviews, AI strategy, cloud planning, DevOps, and digital transformation." },
+      { id: 2, question: "Can you help validate a startup idea?", answer: "Yes. We assist with technical feasibility, architecture, and MVP planning." },
+      { id: 3, question: "Do you provide CTO-level guidance?", answer: "Yes. We offer strategic technical consulting for startups and growing businesses." },
+      { id: 4, question: "Can consulting lead to implementation?", answer: "Absolutely. We can move from strategy to full execution." },
+      { id: 5, question: "How are consulting engagements structured?", answer: "One-time workshops, project-based engagements, or ongoing advisory partnerships." },
     ],
   },
 };

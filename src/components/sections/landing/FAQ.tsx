@@ -17,7 +17,7 @@ import { ArrowRight } from "lucide-react";
 const IMAGE_URL =
   "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=800&q=80";
 
-const faqs = [
+const defaultFaqs = [
   {
     id: 1,
     question: "How does your design process work?",
@@ -56,8 +56,19 @@ function useParallax(
   return useTransform(smooth, [0, 1], range);
 }
 
-export default function FAQ() {
-  const [openId, setOpenId] = useState<number | null>(1);
+export interface FaqItem {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+interface FAQProps {
+  faqs?: FaqItem[];
+}
+
+export default function FAQ({ faqs: customFaqs }: FAQProps) {
+  const displayFaqs = customFaqs && customFaqs.length > 0 ? customFaqs : defaultFaqs;
+  const [openId, setOpenId] = useState<number | null>(displayFaqs[0]?.id || 1);
   const sectionRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
   const rightRef = useRef<HTMLDivElement>(null);
@@ -121,19 +132,19 @@ export default function FAQ() {
                   fontSize: "1.05rem",
                 }}
               >
-                Still no luck? We can help!
+                Still have questions?
               </p>
               <p
                 className="text-sm text-slate-400"
                 style={{ fontFamily: "var(--font-dm-sans)" }}
               >
-                Let us Know how we can assist
+                Let's discuss your project and explore how AI can help your business.
               </p>
 
               <div className="flex items-center gap-2 mt-3">
                 <Button variant={"default"} className=" px-8 py-6" >
-                  <Link href="/about/contact" className="flex items-center gap-1 justify-between">
-                    Contact Us
+                  <Link href="/contact" className="flex items-center gap-1 justify-between">
+                    Book a Discovery Call 
                     <ArrowRight />
                   </Link>
                 </Button>
@@ -160,9 +171,9 @@ export default function FAQ() {
 
             {/* FAQ Cards — premium redesign */}
             <div className="flex flex-col gap-0 w-full -mt-20 relative z-100 rounded-xl overflow-hidden border border-neutral-100 shadow-sm">
-              {faqs.map((faq, idx) => {
+              {displayFaqs.map((faq, idx) => {
                 const isOpen = openId === faq.id;
-                const isLast = idx === faqs.length - 1;
+                const isLast = idx === displayFaqs.length - 1;
                 return (
                   <div
                     key={faq.id}

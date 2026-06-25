@@ -120,10 +120,13 @@ function CmsIntegrationFlowCardItem({
 
             <div className="mt-10 flex items-center justify-between gap-4 border-t border-black/10 pt-6 text-sm text-black/40">
               <span>Scroll to continue</span>
-              <span className="inline-flex items-center gap-2 font-medium text-black/55">
+              <button 
+                onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
+                className="inline-flex items-center gap-2 font-medium hover:text-black transition-colors duration-200 cursor-pointer"
+              >
                 Next phase
                 <ArrowRight className="h-4 w-4" />
-              </span>
+              </button>
             </div>
           </div>
         </div>

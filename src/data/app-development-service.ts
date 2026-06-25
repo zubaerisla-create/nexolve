@@ -122,4 +122,11 @@ export const appDevelopmentServiceData: AppDevelopmentServiceData = {
         "Efficient rendering, smooth interactions, and responsive behavior across devices.",
     },
   ],
+  faqs: [
+    { id: 1, question: "Do you build both Android and iOS apps?", answer: "Yes. We develop cross-platform and native mobile applications." },
+    { id: 2, question: "Which technologies do you use?", answer: "Flutter, React Native, and native Android/iOS frameworks." },
+    { id: 3, question: "Can you publish apps to app stores?", answer: "Yes. We assist with App Store and Google Play deployment." },
+    { id: 4, question: "How long does app development take?", answer: "Most projects take between 8–16 weeks depending on complexity." },
+    { id: 5, question: "Can mobile apps integrate with existing systems?", answer: "Yes. APIs, databases, CRMs, and third-party services can all be connected." },
+  ],
 };

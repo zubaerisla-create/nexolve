@@ -25,4 +25,9 @@ export type UiUxServiceData = {
   techTitle: string;
   techDescription: string;
   techItems: UiUxTechItem[];
+  faqs?: {
+    id: number;
+    question: string;
+    answer: string;
+  }[];
 };

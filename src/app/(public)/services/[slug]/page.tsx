@@ -49,7 +49,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
       <GenericServiceTechHighlights data={data} />
 
-      <FAQ />
+      <FAQ faqs={data.faqs} />
       <LetsCreate />
     </main>
   );

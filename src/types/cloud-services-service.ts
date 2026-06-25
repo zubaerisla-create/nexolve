@@ -25,4 +25,9 @@ export type CloudServicesServiceData = {
   techTitle: string;
   techDescription: string;
   techItems: CloudServicesTechItem[];
+  faqs?: {
+    id: number;
+    question: string;
+    answer: string;
+  }[];
 };

@@ -2,11 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Syne, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
-import SmoothScrollProvider from "@/providers/smooth-scroll-provider";
-import ScrollBlur from "@/components/shared/ScrollBlur";
-import LoadingReveal from "@/components/element/loading-reveal";
-import Navbar from "@/components/shared/Navbar";
-import Footer from "@/components/shared/Footer";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -73,13 +68,7 @@ export default function RootLayout({
       className={`${syne.variable} ${dmSans.variable}`}
     >
       <body className="font-dm-sans antialiased bg-white text-slate-900 overflow-x-hidden">
-        <SmoothScrollProvider>
-          <LoadingReveal />
-          <Navbar />
-          {children}
-          <ScrollBlur />
-          <Footer />
-        </SmoothScrollProvider>
+        {children}
       </body>
     </html>
   );

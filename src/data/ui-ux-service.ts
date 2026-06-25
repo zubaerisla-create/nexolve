@@ -122,4 +122,11 @@ export const uiUxServiceData: UiUxServiceData = {
         "Clear structure and reusable guidance that help design translate more smoothly into production.",
     },
   ],
+  faqs: [
+    { id: 1, question: "What does the design process include?", answer: "Research, wireframing, prototyping, visual design, and usability testing." },
+    { id: 2, question: "Do you redesign existing products?", answer: "Yes. We improve user experience, accessibility, and conversion rates." },
+    { id: 3, question: "Will I receive editable design files?", answer: "Yes. Design assets and source files are included." },
+    { id: 4, question: "Do you create design systems?", answer: "Yes. We build scalable design systems for consistency across products." },
+    { id: 5, question: "How do you validate design decisions?", answer: "Through research, user feedback, and usability best practices." },
+  ],
 };
